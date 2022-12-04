@@ -8,6 +8,7 @@ import pages.GoogleMainPage;
 import pages.SearchResultsPage;
 
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class UiTest extends BaseSelenideTest {
     @Test
@@ -17,6 +18,7 @@ public class UiTest extends BaseSelenideTest {
     public void searchBySelenide() {
         GoogleMainPage googleMainPage = new GoogleMainPage();
         googleMainPage.openGoogleMainPage("https://google.com");
+        sleep(50000);
         googleMainPage.fillInputSearch("Selenide");
         SearchResultsPage searchResultsPage = new SearchResultsPage();
         searchResultsPage.checkingResults("selenide.org");

@@ -20,7 +20,7 @@ public class DriverSettings {
         chromeOptions.addArguments("--lang=en-en");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.remote = "http://192.168.1.64:4444/wd/hub";
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         Configuration.browserCapabilities = capabilities;
