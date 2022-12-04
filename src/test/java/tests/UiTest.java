@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -28,6 +29,7 @@ public class UiTest extends BaseSelenideTest {
     @Owner("Sergey Mephister")
     @Description("Search false")
     @DisplayName("Search falses")
+    @Issue("QS-7")
     public void searchBySelenideTestError() {
         GoogleMainPage googleMainPage = new GoogleMainPage();
         googleMainPage.openGoogleMainPage("https://google.com");
