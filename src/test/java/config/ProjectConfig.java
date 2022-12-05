@@ -13,7 +13,7 @@ public interface ProjectConfig extends Config {
     @Config.Key("browser")
     String browser();
 
-    @Config.DefaultValue("107.0")
+    @Config.DefaultValue("106.0")
     @Config.Key("browserVersion")
     String browserVersion();
 
