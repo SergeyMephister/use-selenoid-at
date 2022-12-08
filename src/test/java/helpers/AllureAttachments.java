@@ -41,7 +41,8 @@ public class AllureAttachments {
     }
 
     public static URL getVideoUrl(String sessionId) {
-        String videoUrl = Project.config.videoStorage() + sessionId + ".mp4";
+        //String videoUrl = Project.config.videoStorage() + sessionId + ".mp4";
+        String videoUrl = "http://192.168.1.64:4444/video/" + sessionId + ".mp4";
 
         try {
             return new URL(videoUrl);
