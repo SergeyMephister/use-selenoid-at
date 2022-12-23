@@ -19,7 +19,7 @@ public class UiTest extends BaseSelenideTest {
     public void searchBySelenide() {
         GoogleMainPage googleMainPage = new GoogleMainPage();
         googleMainPage.openGoogleMainPage("https://google.com");
-        sleep(50000);
+        sleep(20000);
         googleMainPage.fillInputSearch("Selenide");
         SearchResultsPage searchResultsPage = new SearchResultsPage();
         searchResultsPage.checkingResults("selenide.org");
